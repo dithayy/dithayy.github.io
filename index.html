@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+    <title>dithGo Express</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header class="text-white text-center py-3">
+      <h1><i class="bi bi-box2-heart-fill"></i> dithGO Express</h1>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link text-white" href="#layanan">Layanan</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#tentang">Tentang Kami</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#testimoni">Testimoni</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#kontak">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </nav>
+    </header>
+    <section id="home" class="hero mb-4">
+      <main class="content">
+        <h1 class="text-center">Kirim dengan Kecepatan, Terima dengan Senyuman!</h1>
+        <div class="container-tools">
+          <div class="tools">
+            <div class="lacak col-6" id="pelacakan">
+              <i class="bi bi-pin-map-fill fs-2"></i>
+              <div class="content">
+                <p class="text-center">Lacak Pengiriman</p>
+                <form id="formResi" class="d-flex">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="inputResi" placeholder="Masukkan Nomor Resi" required />
+                  </div>
+                  <button type="submit" class="btn btn-warning text-white"><i class="bi bi-search-heart-fill"></i></button>
+                </form>
+              </div>
+            </div>
+            <div class="tarif col-6" id="cek-ongkir">
+              <i class="bi bi-receipt-cutoff fs-2"></i>
+              <div class="content">
+                <p class="text-center">Cek Ongkir</p>
+                <form id="formKota" class="d-flex">
+                  <div class="mb-3">
+                    <select class="form-select" id="kotaAsal" required>
+                      <option value="">Pilih Kota Asal</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <select class="form-select" id="kotaTujuan" required>
+                      <option value="">Pilih Kota Tujuan</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-warning text-white btn-ongkir"><i class="bi bi-search-heart-fill"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Modal -->
+      <div class="modal" id="ModalHasilCari" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Hasil Pencarian</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="hasilCari"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan" class="mb-4">
+      <h2>Layanan Kami</h2>
+      <div class="container">
+        <a>
+          <div class="card" style="width: 18rem">
+            <img src="img/regular.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5><i class="bi bi-box2-heart-fill"></i> dithGo Express</h5>
+              <h3>Regular</h3>
+              <p>Gak pake lama, 3-5 hari paket datang!</p>
+            </div>
+          </div>
+        </a>
+        <a>
+          <div class="card" style="width: 18rem">
+            <img src="img/nextday.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5><i class="bi bi-box2-heart-fill"></i> dithGo Express</h5>
+              <h3>Next Day</h3>
+              <p>Kirim hari ini, besok dateng dong</p>
+            </div>
+          </div>
+        </a>
+        <a>
+          <div class="card" style="width: 18rem">
+            <img src="img/sameday.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5><i class="bi bi-box2-heart-fill"></i> dithGo Express</h5>
+              <h3>Same Day</h3>
+              <p>Hari ini juga abang kurir langsung otw...</p>
+            </div>
+          </div>
+        </a>
+        <!-- sumber gambar: https://www.freepik.com/free-vector/retro-cartoon-shipping-delivery-stickers-collection_71585483.htm#fromView=search&page=1&position=51&uuid=7b969ebc-31f5-442c-8e85-701d7020fa92 -->
+      </div>
+    </section>
+
+    <section id="tentang" class="mb-4">
+      <div class="content">
+        <div class="detail">
+          <h2><i class="bi bi-box2-heart-fill ikon"></i> dithGo Express</h2>
+          <p>
+            dithGo Express adalah perusahaan jasa kurir di Indonesia. Visi kami adalah menjadi perusahaan jasa kurir terdepan yang dikenal karena kecepatan, keamanan, dan keandalan dalam pengiriman barang, serta memberikan pengalaman
+            terbaik bagi pelanggan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimoni" class="mb-4">
+      <div id="testimoni-container">
+        <div class="content col-6">
+          <h2>Testimoni #dithMate</h2>
+          <div class="card-container">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card" style="width: 18rem">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="bi bi-person-circle"></i> Nadine Aminzah</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Jakarta</h6>
+                      <p class="card-text">Aku pake layanan same day. Bener-bener sampe hari itu juga guys!!. Cocok buat orang yang sukanya dadakan kayak aku hehehehe</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card" style="width: 18rem">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="bi bi-person-circle"></i> Raditya Jika</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Bogor</h6>
+                      <p class="card-text">Murah banget kocak! Kirim barang dari Medan ke Bogor ga nyampe gocap anjir. Mantaplah pokoknya</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card" style="width: 18rem">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="bi bi-person-circle"></i> Dita Kerang</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Medan</h6>
+                      <p class="card-text">Kurirnya ramah banget bintang 5. Lovyu bang kurir 🥰</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="img col-6">
+          <img src="img/testimoni.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Hubungi Kami</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-3">
+            <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+              <strong>Terima kasih!</strong> Pesan anda sudah terkirim.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="submit-to-google-sheet">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span role="status">Loading...</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <footer class="text-light py-4">
+      <div class="container d-flex flex-wrap justify-content-between">
+        <div class="row">
+          <div class="col-2 col-md-3 logo">
+            <h1><i class="bi bi-box2-heart-fill"></i> dithGO Express</h1>
+            <p>&copy; 2024 dithGO-Express</p>
+          </div>
+          <div class="col-2 col-md-3 cs">
+            <h6 class="fw-bold">CUSTOMER SERVICE</h6>
+            <p class="mb-1"><i class="bi bi-headset"></i> (021) 4444 555</p>
+            <p class="mb-2"><i class="bi bi-envelope"></i> csdithgo@email.com</p>
+            <div class="d-flex sosmed">
+              <a href="#" class="me-3 text-light"><i class="bi bi-instagram fs-5"></i></a>
+              <a href="#" class="me-3 text-light"><i class="bi bi-tiktok fs-5"></i></a>
+              <a href="#" class="me-3 text-light"><i class="bi bi-twitter-x fs-5"></i></a>
+              <a href="#" class="me-3 text-light"><i class="bi bi-linkedin fs-5"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-facebook fs-5"></i></a>
+            </div>
+          </div>
+          <div class="col-2 col-md-2 cs">
+            <h6 class="fw-bold">PERUSAHAAN</h6>
+            <ul class="list-unstyled">
+              <a href="#tentang"><li>Tentang Kami</li></a>
+              <a href="#kontak"><li>Hubungi Kami</li></a>
+              <a href="#testimoni"><li>Testimoni</li></a>
+            </ul>
+          </div>
+          <div class="col-2 col-md-2 cs">
+            <h6 class="fw-bold">LAYANAN</h6>
+            <ul class="list-unstyled">
+              <a href="#layanan"><li>Reguler</li></a>
+              <a href="#layanan"><li>Next Day</li></a>
+              <a href="#layanan"><li>Same Day</li></a>
+            </ul>
+          </div>
+          <div class="col-2 col-md-2 cs">
+            <h6 class="fw-bold">LAINNYA</h6>
+            <ul class="list-unstyled">
+              <a href="#pelacakan"><li>Lacak Pengiriman</li></a>
+              <a href="#cek-ongkir"><li>Cek Ongkir</li></a>
+            </ul>
+          </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="src/script.js"></script>
+  </body>
+</html>
