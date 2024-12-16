@@ -41,7 +41,7 @@ main {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../dithayy.github.io/img/banner.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../img/banner.jpeg");
   background-size: cover;
   position: relative;
 }
@@ -108,7 +108,7 @@ main {
 }
 
 #tentang {
-  background: linear-gradient(rgba(231, 231, 231, 0.6), rgba(255, 255, 255, 0.4)), url("../../dithayy.github.io/img/tentang.jpg");
+  background: linear-gradient(rgba(231, 231, 231, 0.6), rgba(255, 255, 255, 0.4)), url("../img/tentang.jpg");
   background-size: cover;
   position: relative;
   height: 80vh;
@@ -179,8 +179,8 @@ footer .row .cs a {
     flex-wrap: wrap;
   }
   .layanan .card {
-    width: 80% !important;
-    height: 80% !important;
+    width: 60% !important;
+    height: 60% !important;
   }
   #tentang,
   #tentang .content {
@@ -191,7 +191,7 @@ footer .row .cs a {
   }
   #testimoni .card {
     width: 80% !important;
-    height: 80% !important;
+    height: 60% !important;
   }
   #testimoni .img img {
     width: 90% !important;
@@ -201,13 +201,13 @@ footer .row .cs a {
   }
 
   footer .logo h1 {
-    font-size: 12px;
+    font-size: 10px !important;
   }
   footer .row .logo p {
-    font-size: 9px;
+    font-size: 40% !important;
   }
   footer .row .cs h6 {
-    font-size: 5px;
+    font-size: 5px !important;
   }
   footer .row .cs {
     font-size: 62.5%;
