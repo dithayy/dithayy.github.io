@@ -29,7 +29,6 @@
             </ul>
           </div>
         </div>
-        
       </nav>
     </header>
     <section id="home" class="hero mb-4">
@@ -37,7 +36,7 @@
         <h1 class="text-center">Kirim dengan Kecepatan, Terima dengan Senyuman!</h1>
         <div class="container-tools">
           <div class="tools">
-            <div class="lacak col-6" id="pelacakan">
+            <div class="lacak col-5" id="pelacakan">
               <i class="bi bi-pin-map-fill fs-2"></i>
               <div class="content">
                 <p class="text-center">Lacak Pengiriman</p>
@@ -49,19 +48,19 @@
                 </form>
               </div>
             </div>
-            <div class="tarif col-6" id="cek-ongkir">
+            <div class="tarif col-7" id="cek-ongkir">
               <i class="bi bi-receipt-cutoff fs-2"></i>
               <div class="content">
                 <p class="text-center">Cek Ongkir</p>
                 <form id="formKota" class="d-flex">
                   <div class="mb-3">
                     <select class="form-select" id="kotaAsal" required>
-                      <option value="">Pilih Kota Asal</option>
+                      <option value="">Kota Asal</option>
                     </select>
                   </div>
                   <div class="mb-3">
                     <select class="form-select" id="kotaTujuan" required>
-                      <option value="">Pilih Kota Tujuan</option>
+                      <option value="">Kota Tujuan</option>
                     </select>
                   </div>
                   <button type="submit" class="btn btn-warning text-white btn-ongkir"><i class="bi bi-search-heart-fill"></i></button>
@@ -87,37 +86,46 @@
 
     <section id="layanan" class="mb-4">
       <h2>Layanan Kami</h2>
-      <div class="container">
-        <a>
-          <div class="card">
-            <img src="img/regular.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5><i class="bi bi-box2-heart-fill"></i> dithGo Express</h5>
-              <h3>Regular</h3>
-              <p>Gak pake lama, 3-5 hari paket datang!</p>
+      <div class="container-fluid row">
+        <div class="col">
+          <a>
+            <div class="card">
+              <img src="img/regular.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5><i class="bi bi-box2-heart-fill"></i> dithGo Express</h5>
+                <h3>Regular</h3>
+                <p>Gak pake lama, 3-5 hari paket datang!</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a>
-          <div class="card">
-            <img src="img/nextday.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5><i class="bi bi-box2-heart-fill"></i> dithGo Express</h5>
-              <h3>Next Day</h3>
-              <p>Kirim hari ini, besok dateng dong</p>
+          </a>
+        </div>
+
+        <div class="col">
+          <a>
+            <div class="card">
+              <img src="img/nextday.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5><i class="bi bi-box2-heart-fill"></i> dithGo Express</h5>
+                <h3>Next Day</h3>
+                <p>Kirim hari ini, besok dateng dong</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a>
-          <div class="card">
-            <img src="img/sameday.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5><i class="bi bi-box2-heart-fill"></i> dithGo Express</h5>
-              <h3>Same Day</h3>
-              <p>Hari ini juga abang kurir langsung otw...</p>
+          </a>
+        </div>
+
+        <div class="col">
+          <a>
+            <div class="card">
+              <img src="img/sameday.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5><i class="bi bi-box2-heart-fill"></i> dithGo Express</h5>
+                <h3>Same Day</h3>
+                <p>Hari ini juga abang kurir langsung otw...</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
+
         <!-- sumber gambar: https://www.freepik.com/free-vector/retro-cartoon-shipping-delivery-stickers-collection_71585483.htm#fromView=search&page=1&position=51&uuid=7b969ebc-31f5-442c-8e85-701d7020fa92 -->
       </div>
     </section>
@@ -222,56 +230,47 @@
         </div>
       </div>
     </section>
-  
-    <footer class="text-light py-4">
-      <div class="container d-flex flex-wrap justify-content-between">
+
+    <footer class="text-white py-4">
+      <div class="container">
         <div class="row">
-          <div class="col-2 col-md-3 logo">
-            <h1><i class="bi bi-box2-heart-fill"></i> dithGO Express</h1>
-            <p>&copy; 2024 dithGO-Express</p>
-          </div>
-          <div class="col-2 col-md-3 cs">
-            <h6 class="fw-bold">CUSTOMER SERVICE</h6>
-            <p class="mb-1"><i class="bi bi-headset"></i> (021) 4444 555</p>
-            <p class="mb-2"><i class="bi bi-envelope"></i> csdithgo@email.com</p>
-            <div class="d-flex sosmed">
-              <a href="#" class="me-3 text-light"><i class="bi bi-instagram fs-5"></i></a>
-              <a href="#" class="me-3 text-light"><i class="bi bi-tiktok fs-5"></i></a>
-              <a href="#" class="me-3 text-light"><i class="bi bi-twitter-x fs-5"></i></a>
-              <a href="#" class="me-3 text-light"><i class="bi bi-linkedin fs-5"></i></a>
-              <a href="#" class="text-light"><i class="bi bi-facebook fs-5"></i></a>
+          <div class="col">
+            <div>
+              <h3><i class="bi bi-box2-heart-fill"></i> dithGO Express</h3>
+              <p>&copy; 2024 dithGO-Express</p>
             </div>
           </div>
-          <div class="col-2 col-md-2 cs">
-            <h6 class="fw-bold">PERUSAHAAN</h6>
-            <ul class="list-unstyled">
-              <a href="#tentang"><li>Tentang Kami</li></a>
-              <a href="#kontak"><li>Hubungi Kami</li></a>
-              <a href="#testimoni"><li>Testimoni</li></a>
+          <div class="col">
+            <h5>Quick Link</h5>
+            <ul>
+              <li><a href="#layanan">Layanan</a></li>
+              <li><a href="#cek-ongkir">Cek Ongkir</a></li>
+              <li><a href="#pelacakan">Lacak Paket</a></li>
+              <li><a href="#tentang">Tentang Kami</a></li>
+              <li><a href="#testimoni">Testimoni</a></li>
             </ul>
           </div>
-          <div class="col-2 col-md-2 cs">
-            <h6 class="fw-bold">LAYANAN</h6>
-            <ul class="list-unstyled">
-              <a href="#layanan"><li>Reguler</li></a>
-              <a href="#layanan"><li>Next Day</li></a>
-              <a href="#layanan"><li>Same Day</li></a>
-            </ul>
-          </div>
-          <div class="col-2 col-md-2 cs">
-            <h6 class="fw-bold">LAINNYA</h6>
-            <ul class="list-unstyled">
-              <a href="#pelacakan"><li>Lacak Pengiriman</li></a>
-              <a href="#cek-ongkir"><li>Cek Ongkir</li></a>
-            </ul>
+          <div class="col kontak">
+            <h5>Customer Service</h5>
+            <p class="mb-1"><i class="bi bi-headset"></i> (021) 4444 555</p>
+            <p class="mb-2"><i class="bi bi-envelope"></i> csdithgo@email.com</p>
+            <div class="sosmed">
+              <a href="#" class="me-3 text-light"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="me-3 text-light"><i class="bi bi-tiktok"></i></a>
+              <a href="#" class="me-3 text-light"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="me-3 text-light"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+            </div>
           </div>
         </div>
+      </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-        <script src="src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
