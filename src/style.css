@@ -41,7 +41,7 @@ main {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../img/banner.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("img/banner.jpeg");
   background-size: cover;
   position: relative;
 }
@@ -108,7 +108,7 @@ main {
 }
 
 #tentang {
-  background: linear-gradient(rgba(231, 231, 231, 0.6), rgba(255, 255, 255, 0.4)), url("../img/tentang.jpg");
+  background: linear-gradient(rgba(231, 231, 231, 0.6), rgba(255, 255, 255, 0.4)), url("img/tentang.jpg");
   background-size: cover;
   position: relative;
   height: 80vh;
@@ -209,7 +209,7 @@ footer .row .cs a {
   footer .row .cs h6 {
     font-size: 5px !important;
   }
-  footer .row .cs {
+  footer .row .cs a {
     font-size: 62.5%;
     margin: 0 10px;
   }
