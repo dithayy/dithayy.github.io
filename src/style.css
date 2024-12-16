@@ -41,7 +41,7 @@ main {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../paket/img/banner.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../dithayy.github.io/img/banner.jpeg");
   background-size: cover;
   position: relative;
 }
@@ -98,8 +98,8 @@ main {
   margin: 1.2rem;
 }
 #layanan a {
-  text-decoration: none; /* Menghilangkan garis bawah */
-  color: inherit; /* Menggunakan warna teks yang sama */
+  text-decoration: none; 
+  color: inherit; 
 }
 
 #layanan a:hover {
@@ -108,7 +108,7 @@ main {
 }
 
 #tentang {
-  background: linear-gradient(rgba(231, 231, 231, 0.6), rgba(255, 255, 255, 0.4)), url("../../paket/img/tentang.jpg");
+  background: linear-gradient(rgba(231, 231, 231, 0.6), rgba(255, 255, 255, 0.4)), url("../../dithayy.github.io/img/tentang.jpg");
   background-size: cover;
   position: relative;
   height: 80vh;
@@ -179,8 +179,8 @@ footer .row .cs a {
     flex-wrap: wrap;
   }
   .layanan .card {
-    width: 60%;
-    height: 60%;
+    width: 80% !important;
+    height: 80% !important;
   }
   #tentang,
   #tentang .content {
@@ -190,7 +190,8 @@ footer .row .cs a {
     font-size: 22px !important;
   }
   #testimoni .card {
-    width: 60% !important;
+    width: 80% !important;
+    height: 80% !important;
   }
   #testimoni .img img {
     width: 90% !important;
@@ -200,16 +201,13 @@ footer .row .cs a {
   }
 
   footer .logo h1 {
-    font-size: 14px;
-  }
-  footer .row .logo p {
     font-size: 12px;
   }
-  footer .row .cs h6 {
-    font-size: 6px;
+  footer .row .logo p {
+    font-size: 9px;
   }
-  footer .logo p {
-    font-size: 50% !important;
+  footer .row .cs h6 {
+    font-size: 5px;
   }
   footer .row .cs {
     font-size: 62.5%;
